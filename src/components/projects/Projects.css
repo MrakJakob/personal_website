@@ -1,0 +1,12 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 91vh;
+    padding-top: 35px;
+    padding-left: 50px;
+}
+
+.heading {
+    font-size: 18px;
+}
