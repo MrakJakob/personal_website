@@ -1,88 +1,111 @@
 .root {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
-.project  {
-    display: flex;
-    justify-content: space-between;
+.project {
+  display: flex;
+  justify-content: space-between;
 }
 
 .projectImage {
-    border-radius: 10pt;
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10pt;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .projectDetailsRight {
-    display: flex;
-    flex-direction: column;
-    margin-left: 54px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 54px;
 }
 
 .projectDetailsLeft {
-    display: flex;
-    flex-direction: column;
-    margin-right: 54px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 54px;
 }
 
 .projectTitle {
-    display: flex;
-   
+  display: flex;
 }
 
 .projectName {
-    font-weight: bold;
-    margin-bottom: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .projectLink {
-    transition: 0.3s;
-    border-radius: 100%;
-    font-weight: 100;
-    margin-left: 100px;
+  transition: 0.3s;
+  border-radius: 100%;
+  font-weight: 100;
+  margin-left: 100px;
 }
 
 .projectLink:hover {
-    cursor: pointer;
-    background: rgb(251, 157, 63);
-    background: linear-gradient(
-        90deg,
-      rgba(251, 157, 63, 1) 0%,
-      rgba(251, 150, 73, 1) 19%,
-      rgba(252, 141, 93, 1) 47%,
-      rgba(252, 101, 85, 1) 76%,
-      rgba(252, 100, 70, 1) 100%
-    );
-    
-    opacity: 0.85;
+  cursor: pointer;
+  background: rgb(251, 157, 63);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 157, 63, 1) 0%,
+    rgba(251, 150, 73, 1) 19%,
+    rgba(252, 141, 93, 1) 47%,
+    rgba(252, 101, 85, 1) 76%,
+    rgba(252, 100, 70, 1) 100%
+  );
+
+  opacity: 0.85;
 }
 
 .projectTag {
-    border: 1px solid black;
-    border-radius: 10pt;
-    font-size: small;
-    width: fit-content;
-    padding: 3pt 8pt 3pt 8pt;
-    transition: 0.3s;
+  border: 1px solid black;
+  border-radius: 10pt;
+  font-size: small;
+  width: fit-content;
+  padding: 3pt 8pt 3pt 8pt;
+  transition: 0.3s;
 }
 
 .projectTag:hover {
-    cursor:context-menu;
-    background: rgb(251, 157, 63);
-    background: linear-gradient(
-        90deg,
-      rgba(251, 157, 63, 1) 0%,
-      rgba(251, 150, 73, 1) 19%,
-      rgba(252, 141, 93, 1) 47%,
-      rgba(252, 101, 85, 1) 76%,
-      rgba(252, 100, 70, 1) 100%
-    );
-  
-    opacity: 0.85;
+  cursor: context-menu;
+  background: rgb(251, 157, 63);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 157, 63, 1) 0%,
+    rgba(251, 150, 73, 1) 19%,
+    rgba(252, 141, 93, 1) 47%,
+    rgba(252, 101, 85, 1) 76%,
+    rgba(252, 100, 70, 1) 100%
+  );
+
+  opacity: 0.85;
 }
 
 .projectDesc {
-    height: 100%;
-    display: flex;
-    margin-top: 50px;
+  height: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1015px) {
+  .project {
+    flex-direction: column;
+  }
+  .projectDetailsRight {
+    margin-top: 34px;
+    margin-left: 0px;
+  }
+
+  .projectDetailsLeft {
+    margin-right: 0px;
+  }
+
+  .projectImage {
+    margin-top: 34px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .projectImage {
+    width: 350px;
+  }
 }

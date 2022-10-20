@@ -1,13 +1,20 @@
 .projects {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 35px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 35px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .projects {
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 35px;
+  }
 }
 
 .heading {
-    font-size: 18px;
+  font-size: 18px;
 }
