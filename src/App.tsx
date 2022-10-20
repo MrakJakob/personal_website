@@ -7,13 +7,10 @@ import { Home } from "./components/home/Home";
 import { Projects } from "./components/projects/Projects";
 
 function App() {
-  
-
-
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar/>
 
       <Routes>
         <Route path="/" element={<Home />}></Route>

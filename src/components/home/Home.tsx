@@ -2,6 +2,10 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 export function Home() {
+  const openInNewTab = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <>
       <div className="welcome_message_container">
@@ -13,8 +17,16 @@ export function Home() {
         </div>
       </div>
       <div className="links_container">
-        <AiFillGithub className="icon" />
-        <AiFillLinkedin className="icon" />
+        <AiFillGithub
+          className="icon"
+          onClick={() => openInNewTab("https://github.com/MrakJakob")}
+        />
+        <AiFillLinkedin
+          className="icon"
+          onClick={() =>
+            openInNewTab("https://www.linkedin.com/in/jakob-mrak-508786243/")
+          }
+        />
       </div>
     </>
   );

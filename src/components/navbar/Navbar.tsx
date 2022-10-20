@@ -14,9 +14,11 @@ export function Navbar() {
     navigate("/")
   }
 
+  const pathname = window.location.pathname
+
 
   return (
-    <div className="nav">
+    <div className={pathname === "/" ? "nav" : "nav gradient"}>
       <div className="title_container">
         <div className="title" onClick={navigateHome}>Jakob Mrak</div>
       </div>

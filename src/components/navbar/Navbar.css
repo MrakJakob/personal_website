@@ -4,6 +4,22 @@
   height: 9vh;
   letter-spacing: 1pt;
   font-weight: 300;
+  position: sticky;
+  top: 0;
+  
+  opacity: 0.9;
+}
+
+.gradient {
+  background: rgb(251, 157, 63);
+  background: linear-gradient(
+      90deg,
+    rgba(251, 157, 63, 1) 0%,
+    rgba(251, 150, 73, 1) 19%,
+    rgba(252, 141, 93, 1) 47%,
+    rgba(252, 101, 85, 1) 76%,
+    rgba(252, 100, 70, 1) 100%
+  );
 }
 
 .title_container {
