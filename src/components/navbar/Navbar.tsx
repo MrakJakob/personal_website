@@ -6,9 +6,9 @@ import styled, { keyframes } from "styled-components";
 type NavbarProps = {
   gradient: boolean;
   setGradient: React.Dispatch<React.SetStateAction<boolean>>;
-}
+};
 
-export function Navbar({gradient, setGradient}: NavbarProps) {
+export function Navbar({ gradient, setGradient }: NavbarProps) {
   const [sidebar, setSidebar] = useState(false);
   const pathname = window.location.pathname;
   const navigate = useNavigate();
@@ -35,8 +35,9 @@ export function Navbar({gradient, setGradient}: NavbarProps) {
 
   const toggleSidebar = () => {
     setSidebar(!sidebar);
-    if (pathname === "/") {  // if we are on homepage we toggle animated gradient when we open sidebar
-      setGradient(sidebar)
+    if (pathname === "/") {
+      // if we are on homepage we toggle animated gradient when we open sidebar
+      setGradient(sidebar);
     }
   };
 

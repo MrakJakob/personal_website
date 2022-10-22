@@ -13,7 +13,7 @@
 .gradient {
   background: rgb(251, 157, 63);
   background: linear-gradient(
-      90deg,
+    90deg,
     rgba(251, 157, 63, 1) 0%,
     rgba(251, 150, 73, 1) 19%,
     rgba(252, 141, 93, 1) 47%,
@@ -38,7 +38,7 @@
 }
 
 .title:hover {
-  color: #E7E7E7;
+  color: #e7e7e7;
   cursor: pointer;
 }
 
@@ -58,10 +58,9 @@
 }
 
 .navbar_element:hover {
-  color: #E7E7E7;
+  color: #e7e7e7;
   cursor: pointer;
 }
-
 
 /* Collapse navbar menu */
 
@@ -91,26 +90,26 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   body {
-      overflow-x: hidden;
-      width: 100%;
+    overflow-x: hidden;
+    width: 100%;
   }
-  .navbar_elements_container{
-      position: absolute;
-      right: 0px;
-      height: 91vh;
-      top: 9vh;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      display: none;
-      margin-right: 0;
+  .navbar_elements_container {
+    position: absolute;
+    right: 0px;
+    height: 91vh;
+    top: 9vh;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+    margin-right: 0;
   }
-  
+
   .burger {
-      display: block;
-      cursor: pointer;
+    display: block;
+    cursor: pointer;
   }
 }
 

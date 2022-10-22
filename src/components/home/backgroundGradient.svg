@@ -37,14 +37,3 @@
    <rect fill='url(#a)' width='100%' height='100%' />
    <rect fill='url(#b)' width='100%' height='100%' />
 </svg>
-
-
-<!-- background: rgb(251, 157, 63);
-  background: radial-gradient(
-    circle,
-    rgba(251, 157, 63, 1) 0%,
-    rgba(251, 150, 73, 1) 19%,
-    rgba(252, 141, 93, 1) 47%,
-    rgba(252, 101, 85, 1) 76%,
-    rgba(252, 100, 70, 1) 100%
-  ); -->

@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 type HomeProps = {
-  setGradient : React.Dispatch<React.SetStateAction<boolean>>;
-}
+  setGradient: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-export function Home({setGradient} : HomeProps) {
+export function Home({ setGradient }: HomeProps) {
   useEffect(() => {
     setGradient(true);
-  }, [])
+  }, []);
 
   const openInNewTab = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
