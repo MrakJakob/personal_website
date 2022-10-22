@@ -16,6 +16,7 @@
     "react-lazy-load-image-component": "^1.5.5",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.6",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-lazy-load-image-component": "^1.5.2"
+    "@types/react-lazy-load-image-component": "^1.5.2",
+    "@types/styled-components": "^5.1.26"
   }
 }

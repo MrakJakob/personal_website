@@ -1,18 +1,15 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: rgb(251, 157, 63);
-  background: radial-gradient(
-    circle,
-    rgba(251, 157, 63, 1) 0%,
-    rgba(251, 150, 73, 1) 19%,
-    rgba(252, 141, 93, 1) 47%,
-    rgba(252, 101, 85, 1) 76%,
-    rgba(252, 100, 70, 1) 100%
-  );
 
   opacity: 0.85;
   max-width: 100%;
+}
+
+.animated_gradient {
+  background: url("./components/home/backgroundGradient.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -48,9 +45,8 @@
   height: 100px;
   width: 100px;
   margin-right: 10pt;
-  color:black;
+  color:rgba(0, 0, 0, 0.9);
   transition: 0.3s;
-  opacity: 0.8;
 }
 
 .icon:hover {

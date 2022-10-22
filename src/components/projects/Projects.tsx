@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Project } from "./Project";
 import "./Projects.css";
 import FlowserImg from "../../assets/images/Flowser.png";
@@ -34,7 +34,17 @@ const projectsData = [
   
 ];
 
-export function Projects() {
+
+type ProjectProps = {
+  setGradient : React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function Projects({setGradient}: ProjectProps) {
+  useEffect(() => {
+    setGradient(false);
+  }, [])
+
+
   return (
     <div className="projects">
       <div className="heading">
