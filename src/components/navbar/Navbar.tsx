@@ -10,27 +10,32 @@ type NavbarProps = {
 
 export function Navbar({ gradient, setGradient }: NavbarProps) {
   const [sidebar, setSidebar] = useState(false);
+  const [activeWindow, setActiveWindow] = useState("/");
   const pathname = window.location.pathname;
   const navigate = useNavigate();
 
   const navigateToProjects = () => {
     navigate("/projects");
     setSidebar(false);
+    setActiveWindow("/projects")
   };
 
   const navigateHome = () => {
     navigate("/");
     setSidebar(false);
+    setActiveWindow("/");
   };
 
   const navigateToSkills = () => {
     navigate("/skills");
     setSidebar(false);
+    setActiveWindow("/skills");
   };
 
   const navigateToGallery = () => {
     navigate("/gallery");
     setSidebar(false);
+    setActiveWindow("/gallery");
   };
 
   const toggleSidebar = () => {
@@ -95,13 +100,13 @@ export function Navbar({ gradient, setGradient }: NavbarProps) {
           sidebarElementsList.map((sidebarElement) => sidebarElement)
         ) : (
           <>
-            <div className="navbar_element" onClick={navigateToProjects}>
+            <div className={activeWindow === "/projects" ? "navbar_element active" : "navbar_element"} onClick={navigateToProjects}>
               Projects
             </div>
-            <div className="navbar_element" onClick={navigateToSkills}>
+            <div className={activeWindow === "/skills" ? "navbar_element active" : "navbar_element"} onClick={navigateToSkills}>
               Skills
             </div>
-            <div className="navbar_element" onClick={navigateToGallery}>
+            <div className={activeWindow === "/gallery" ? "navbar_element active" : "navbar_element"} onClick={navigateToGallery}>
               Gallery
             </div>
           </>
