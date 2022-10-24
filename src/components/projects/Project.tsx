@@ -17,7 +17,7 @@ export const Project: FunctionComponent<ProjectProps> = ({
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <div className="root">
+    <div className="project_root">
       {index % 2 === 0 ? (
         <div className="project">
           <div className="imageLeft">

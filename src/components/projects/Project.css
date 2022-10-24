@@ -1,4 +1,4 @@
-.root {
+.project_root {
   margin-top: 50px;
 }
 
@@ -108,4 +108,5 @@
   .projectImage {
     width: 350px;
   }
+ 
 }

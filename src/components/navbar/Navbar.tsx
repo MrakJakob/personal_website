@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Routes, Route, useNavigate, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
 type NavbarProps = {
@@ -83,7 +83,7 @@ export function Navbar({ gradient, setGradient }: NavbarProps) {
   ];
 
   return (
-    <div className={gradient ? "nav" : "nav gradient"}>
+    <div className={gradient ? "nav sticky_navbar" : "nav sticky_navbar gradient"}>
       <div className="title_container">
         <div className="title" onClick={navigateHome}>
           Jakob Mrak

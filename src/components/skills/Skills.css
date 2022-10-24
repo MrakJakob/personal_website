@@ -1,8 +1,8 @@
 .skills {
-  padding-top: 35px;
+  padding-top: 120px;
   padding-left: 300px;
   padding-right: 300px;
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 1440px) {

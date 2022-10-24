@@ -15,16 +15,20 @@ export function Gallery({ setGradient }: GalleryProps) {
   const { docs } = useFirestore("gallery");
 
   return (
-    <div className="gallery">
+    <div className="gallery_root">
+      <div className="heading">Gallery of my dall-e generated digital images</div>
+      <div className="gallery">
+
+     
       {docs.map((image) => (
         <div className="image_container">
           <LazyLoadImage
             src={image.url}
-            width="300"
             className="gallery_image"
           ></LazyLoadImage>
         </div>
       ))}
+       </div>
     </div>
   );
 }
