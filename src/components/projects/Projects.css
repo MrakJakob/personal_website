@@ -15,4 +15,9 @@
   }
 }
 
-
+@media only screen and (max-width: 640px) {
+  .projects {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
