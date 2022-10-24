@@ -5,7 +5,6 @@
 
   opacity: 0.85;
   max-width: 100%;
-
 }
 
 .animated_gradient {
@@ -42,11 +41,12 @@
 }
 
 .icon {
-  height: 100px;
-  width: 100px;
-  margin-right: 10pt;
+  height: 120px;
+  width: 120px;
+  padding: 10pt;
   color: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
+  justify-content: center;
 }
 
 .icon:hover {
@@ -54,6 +54,7 @@
   cursor: pointer;
   opacity: 0.8;
 }
+
 
 .heading {
   font-size: 22px;
@@ -64,3 +65,16 @@
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .message {
+    font-size: 20px;
+  }
+  .icon {
+    height: 90px;
+    width: 90px;
+  }
+  .links_container {
+    padding-right: 0;
+    justify-content: center;
+  }
+}
