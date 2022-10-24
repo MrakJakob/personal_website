@@ -90,6 +90,13 @@
   .project {
     flex-direction: column;
   }
+  .project > #a { order: 1; }
+  .project > #b { order: 2; }
+  
+  .mobile_margin {
+    margin-top: 34px;
+  }
+
   .projectDetailsRight {
     margin-top: 34px;
     margin-left: 0px;
@@ -108,5 +115,10 @@
   .projectImage {
     width: 350px;
   }
- 
+}
+
+@media only screen and (max-width: 385px) {
+  .projectImage {
+    width: 280px;
+  }
 }
