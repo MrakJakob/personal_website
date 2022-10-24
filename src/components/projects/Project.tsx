@@ -20,14 +20,14 @@ export const Project: FunctionComponent<ProjectProps> = ({
     <div className="project_root">
       {index % 2 === 0 ? (
         <div className="project">
-          <div className="imageLeft">
+          <div className="imageLeft" id="a">
             <LazyLoadImage
               src={project.img}
               width="520"
               className="projectImage"
             ></LazyLoadImage>
           </div>
-          <div className="projectDetailsRight">
+          <div className="projectDetailsRight" id="b">
             <div className="projectTitle">
               <div className="projectName">{project.projectName}</div>
               <BsArrowRightCircle
@@ -42,7 +42,7 @@ export const Project: FunctionComponent<ProjectProps> = ({
         </div>
       ) : (
         <div className="project">
-          <div className="projectDetailsLeft">
+          <div className="projectDetailsLeft mobile_margin" id="b">
             <div className="projectTitle">
               <div className="projectName">{project.projectName}</div>
               <BsArrowRightCircle
@@ -54,7 +54,7 @@ export const Project: FunctionComponent<ProjectProps> = ({
             <div className="projectTag">{project.tag}</div>
             <div className="projectDesc">{project.description}</div>
           </div>
-          <div className="imageRight">
+          <div className="imageRight" id="a">
             <LazyLoadImage
               src={project.img}
               width="520"
